@@ -393,11 +393,13 @@ const SearchResults = ({ open, onClose, applyFilters, dateloading }) => {
   //   
   // }, [handlePageChange]);
   const handleAnnotate = () => {
+    console.log("clicked");
+    console.log(annotateData);
+  
     if (openAnnotate) {
       setOpenAnnotate(false);
     } else {
       setOpenAnnotate(true);
-      setOpenNotes(false);
     }
   };
   const handleNotes = () => {

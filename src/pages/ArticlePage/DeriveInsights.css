@@ -1,0 +1,329 @@
+.derive-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.header-insights {
+  width: 93.61%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--secondary-color);
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  margin: 0.5% 0% 0% 0%;
+}
+
+.logo img {
+  width: 100px;
+  height: 30.66px;
+  margin-left: 26px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 10px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.auth-buttons {
+  margin-right: 26px;
+}
+.auth-buttons .signup,
+.auth-buttons .login {
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 36.49px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 14px;
+  color: rgba(26, 130, 255, 1);
+  font-weight: 600;
+}
+
+.auth-buttons .signup {
+  background: transparent;
+  background-color: rgba(255, 255, 255, 1);
+}
+.auth-buttons .login {
+  background: transparent;
+  background-color: rgba(255, 255, 255, 1);
+}
+.auth-buttons .signup:hover {
+  background: black;
+  color: white;
+}
+.auth-buttons .login:hover {
+  background: black;
+  color: white;
+}
+.derive-content {
+  width: 92.91%;
+  display: flex;
+  margin: 1%;
+  color: #333;
+  height: 75vh;
+}
+.derive-history-pagination {
+  margin-left: 1%;
+  width: 20%;
+  padding: 27px, 0px, 27px, 0px;
+  /* height: 70vh; */
+  max-height: 700px;
+  overflow-y: auto;
+  color: #333;
+  border-radius: 20px;
+  border: 1px solid #ebebf3;
+}
+.derive-article-content {
+  width: 43.61%;
+  overflow-y: auto;
+  text-align: start;
+  margin: 0% 1%;
+  max-height: 70vh;
+  gap: 28px;
+  border-radius: 20px;
+  flex: 1;
+  padding: 0 20px 0 20px;
+  border: 1px solid rgba(235, 235, 243, 1);
+  display: flex;
+}
+.derive-query-asked {
+  background-color: rgba(237, 237, 237, 1);
+  /* text-align: right; */
+  float: right;
+  max-width: 300px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  margin-left: auto; /* Pushes it to the right */
+  clear: both;
+  word-wrap: break-word;
+  margin: 1% 0% 0% 0%;
+  max-height: 300px;
+  overflow-y: auto;
+  color: black;
+  font-size: 15px;
+}
+
+.response {
+  text-align: left;
+  float: left;
+  width: 90%;
+  /* max-width: 500px; */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: auto;
+  clear: both;
+  overflow-y: auto;
+  color: black;
+  background: #f9fcfe;
+  font-size: 14px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#pagination-a {
+  padding: 0 15px;
+}
+.derive-history-pagination h5 {
+  width: fit-content;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: start;
+  margin-left: 1%;
+  /* margin: auto; */
+  margin-top: 3%;
+  margin-bottom: 2%;
+  padding: 0 8px;
+}
+
+.derive-history-pagination ul {
+  list-style: none;
+  padding: 0;
+  justify-content: start;
+  margin-top: 3%;
+}
+
+.derive-history-pagination ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: start;
+  position: relative;
+  padding: 8px 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  /* border: 0px, 0px, 10px, 0px; */
+  border-bottom: 1px solid rgba(235, 235, 243, 1);
+  /* margin-left: 10%; */
+}
+.derive-history-pagination ul li a {
+  text-decoration: none;
+  justify-content: start;
+  color: black;
+}
+
+.derive-history-pagination ul li.active {
+  color: black;
+  font-weight: 600;
+}
+
+.derive-history-pagination ul li.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.history-pagination ul li.active a::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 5px;
+  bottom: 0;
+  width: 2px;
+  border-radius: 10px;
+  background-color: #007bff;
+}
+
+.history-pagination ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 1px;
+}
+
+.custom-bold {
+  font-weight: 900;
+}
+.derive-chat-query {
+  position: absolute;
+  left: 24%;
+  bottom: 1vh;
+  /* width: 100%; */
+  /* width: 68%; */
+  display: flex;
+
+  flex-direction: column;
+  padding: 10px 0;
+  border-radius: 20px;
+  border: 1px solid rgba(235, 235, 243, 1);
+}
+.derive-predefined-prompts {
+  display: flex;
+  gap: 20px;
+  padding: 5px 10px 10px 10px;
+}
+
+.derive-predefined-prompts button {
+  /* background-color: transparent; */
+  border: 1px solid rgb(206 206 206);
+  color: black;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 24px;
+  padding: 7px;
+  background-color: #c4dad2;
+}
+.derive-stream-input {
+  width: 98%;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+}
+.query-file-input {
+  width: -webkit-fill-available;
+  display: flex;
+}
+.uploaded-file-indicator {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  /* width: -webkit-fill-available; */
+}
+.derive-stream-input input {
+  flex-grow: 1;
+  padding: 15px 0;
+  border-radius: 20px;
+  margin-left: 1%;
+  font-size: 14px;
+  box-shadow: 500px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.stream-flag-logo {
+  top: 60%;
+  margin-left: 1%;
+}
+
+.derive-stream-input .button {
+  height: 30px;
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 1%;
+}
+.derive-stream-input-query {
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 22%;
+  display: flex;
+  align-items: center;
+  width: 76%;
+  margin-bottom: 20px;
+  padding: 10px;
+  z-index: 10;
+}
+#derive-scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#derive-scrollTopBtn:hover {
+  background-color: #555;
+}
