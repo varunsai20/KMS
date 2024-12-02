@@ -1,34 +1,34 @@
 import React, { useState, useEffect } from "react";
 import { Offline, Online } from "react-detect-offline";
 import { MdOutlineWifiOff } from "react-icons/md";
-import { IoWifiSharp } from "react-icons/io5";
+//import { IoWifiSharp } from "react-icons/io5";
 
 const ErrorBoundary = () => {
-  const [showOnlineMessage, setShowOnlineMessage] = useState(false);
+  // const [showOnlineMessage, setShowOnlineMessage] = useState(false);
 
-  useEffect(() => {
-    const handleOnline = () => {
-      setShowOnlineMessage(true);
-      setTimeout(() => setShowOnlineMessage(false), 3000);
-    };
+  // useEffect(() => {
+  //   const handleOnline = () => {
+  //     setShowOnlineMessage(true);
+  //     setTimeout(() => setShowOnlineMessage(false), 3000);
+  //   };
 
-    // Listen for the 'online' event
-    window.addEventListener("online", handleOnline);
+  //   // Listen for the 'online' event
+  //   window.addEventListener("online", handleOnline);
 
-    return () => {
-      window.removeEventListener("online", handleOnline);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("online", handleOnline);
+  //   };
+  // }, []);
 
   return (
     <>
       <Online>
-        {showOnlineMessage && (
+        {/* {showOnlineMessage && (
           <div style={styles.onlineBanner}>
             <IoWifiSharp style={styles.icon} />
             <span style={styles.text}>You're back online!</span>
           </div>
-        )}
+        )} */}
       </Online>
       <Offline>
         <div style={styles.offlineBanner}>

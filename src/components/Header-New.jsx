@@ -6,7 +6,8 @@ import Button from "./Buttons";
 import "../styles/variables.css";
 import "./Header-New.css";
 //import Logo from "../assets/images/Logo_New.svg";
-import Logo from "../assets/images/InfersolD17aR04aP01ZL-Polk4a 1.svg";
+//import Logo from "../assets/images/InfersolD17aR04aP01ZL-Polk4a 1.svg";
+import Logo from "../assets/images/logo.svg";
 import ProfileIcon from "../assets/images/Profile-start.svg";
 import { toast } from "react-toastify";
 
@@ -79,6 +80,10 @@ const Header = () => {
         </Link>
         <div className="line-between">
           <span className="line-in-between"></span>
+        </div>
+        <div className="Logo-write">
+          <h2>Inferai.ai</h2>
+          <p>Infermation for Excellence In Research </p>
         </div>
         <Link
           to="/"

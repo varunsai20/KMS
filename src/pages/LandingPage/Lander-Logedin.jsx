@@ -25,6 +25,7 @@ import axios from "axios";
 import Collection from "../../components/Collection";
 import Citations from "../../components/Citations";
 import GenerateAnnotate from "../../components/GenerateAnnotate";
+import Logo from "../../assets/images/InfersolD17aR04aP01ZL-Polk4a 1.svg";
 
 import Notes from "../NotesPage/Notes";
 import { toast } from "react-toastify";
@@ -229,15 +230,18 @@ const Lander = () => {
       <div className="Landing-Header">
         <Header />
       </div>
-    
+
       <div className="Landing-Content">
         <div className="Landing-Content-Left">
-          <img className="Right2" src={ReactLogo} alt="Right Graphic 2" />
+          {/* <img className="Right2" src={ReactLogo} alt="Right Graphic 2" />
           <img className="Left1" src={Bulb} alt="Left Graphic 1" />
           <img className="Left2" src={circle} alt="Left Graphic 2" />
-          <img className="Right1" src={Molecules} alt="Right Graphic 1" />
+          <img className="Right1" src={Molecules} alt="Right Graphic 1" /> */}
           <div className="welcome-search">
-            <h3 className="Landing-Welcome">
+            <div className="Landing-Welcome">
+              <img src={Logo} alt="infer-ai-logo" style={{ width: "12vw" }} />
+            </div>
+            {/* <h3 className="Landing-Welcome">
               Welcome to <span className="Landing-Infer">Inferai!</span>
             </h3>
             <p className="Landing-Welcome-desc">
@@ -246,13 +250,20 @@ const Lander = () => {
               biotechnology, and healthcare. This innovative platform
               streamlines research processes, enhances data analysis, and
               uncovers new insights.
-            </p>
+            </p> */}
             <SearchBar className={`Landing-Searchbar`} />
+            <p
+              className="Landing-Welcome-desc"
+              style={{ fontSize: "16px", fontWeight: "540" }}
+            >
+              Inferai by Infer Solutions, Inc, Information For Excellence In
+              Research Leveraging Artificial Intelligence.
+            </p>
           </div>
           {/* </div> */}
         </div>
 
-        <div className="Landing-Content-Right">
+        {/* <div className="Landing-Content-Right">
           <img
             className="Landing-Content-Right-Image"
             src={LandingImage}
@@ -264,7 +275,7 @@ const Lander = () => {
               mixBlendMode: "color-burn",
             }}
           />
-        </div>
+        </div> */}
       </div>
 
       <div className="Landing-Features">

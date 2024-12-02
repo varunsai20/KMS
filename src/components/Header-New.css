@@ -41,7 +41,7 @@
 
 .Search-nav-logo {
   display: flex;
-  width: 9vw;
+  width: 12vw;
   /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
 }
 .line-between {
@@ -61,4 +61,17 @@
   justify-content: flex-end;
   gap: 10px;
   padding: 20px 32px;
+}
+.Logo-write {
+  padding: 0;
+  margin: 0;
+  text-align: start;
+}
+.Logo-write p {
+  padding: 0;
+  margin: 0;
+}
+.Logo-write h2 {
+  padding: 0;
+  margin: 0;
 }

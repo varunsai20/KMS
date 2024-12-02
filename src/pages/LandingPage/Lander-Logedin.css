@@ -54,7 +54,7 @@
   margin: auto;
 }
 
-.Landing-Welcome {
+/* .Landing-Welcome {
   width: fit-content;
   font-family: Manrope;
   font-size: 4vw;
@@ -62,6 +62,9 @@
   line-height: 73px;
   text-align: center;
   margin: 0;
+} */
+.Landing-Welcome {
+  text-align: start;
 }
 
 .Landing-Infer {
@@ -78,12 +81,12 @@
 }
 
 .Landing-Welcome-desc {
-  width: 70%;
+  /* width: 70%; */
   margin: 0;
   text-align: justify;
   margin: 0;
   font-family: Manrope;
-  font-size: 1vw;
+  font-size: 2vw;
   font-weight: 500;
   line-height: 23.36px;
   letter-spacing: 0.02em;
@@ -93,7 +96,7 @@
 }
 
 .Landing-Searchbar {
-  width: 85%;
+  width: 100%;
   margin: 0;
   background: none;
   border-radius: 0;
